@@ -1,0 +1,819 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Scale with AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Scale with AI</a>
+        
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="pricing.html" class="nav-link active">Pricing</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        
+        <div class="desktop-buttons">
+          <a href="#" class="btn btn-outline">Sign in</a>
+          <a href="#" class="btn btn-primary">Get started</a>
+        </div>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="pricing.html" class="nav-link active">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="mobile-buttons">
+        <a href="#" class="btn btn-outline">Sign in</a>
+        <a href="#" class="btn btn-primary">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pricing-hero">
+      <div class="bg-gradient"></div>
+      <div class="bg-blob-1"></div>
+      <div class="bg-blob-2"></div>
+      
+      <div class="container">
+        <div class="pricing-content">
+          <span class="tag fade-in">Flexible Pricing</span>
+          <h1 class="headline fade-in">
+            Choose the Perfect <span class="gradient-text">Plan for Your Business</span>
+          </h1>
+          <p class="pricing-subtitle fade-in">
+            Simple, transparent pricing designed to scale with your business needs.
+            No hidden fees or surprises.
+          </p>
+          
+          <div class="billing-toggle fade-in">
+            <span class="billing-option" id="monthlyBilling">Monthly</span>
+            <label class="toggle">
+              <input type="checkbox" id="billingToggle" checked>
+              <span class="toggle-slider"></span>
+            </label>
+            <span class="billing-option active" id="annualBilling">
+              Annually
+              <span class="save-badge">Save 20%</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-plans">
+      <div class="container">
+        <div class="plans-grid">
+          <!-- Starter Plan -->
+          <div class="plan-card fade-in">
+            <div class="plan-header">
+              <h3 class="plan-name">Starter</h3>
+              <p class="plan-desc">Perfect for small businesses just getting started with AI.</p>
+              <div class="plan-price">
+                <span class="price" data-monthly="49" data-annual="39">$39</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="annual-price">Billed annually ($468 total)</p>
+            </div>
+            
+            <ul class="plan-features">
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>AI-powered analytics</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Automated reporting</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Custom integrations</span>
+              </li>
+              <li class="feature-item disabled">
+                <svg class="x-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Priority support</span>
+              </li>
+              <li class="feature-item disabled">
+                <svg class="x-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Advanced personalization</span>
+              </li>
+              <li class="feature-item disabled">
+                <svg class="x-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Team collaboration tools</span>
+              </li>
+            </ul>
+            
+            <a href="#" class="btn btn-outline plan-cta">Get started</a>
+          </div>
+
+          <!-- Professional Plan -->
+          <div class="plan-card popular fade-in">
+            <div class="popular-badge">Most Popular</div>
+            <div class="plan-header">
+              <h3 class="plan-name">Professional</h3>
+              <p class="plan-desc">Ideal for growing companies looking to scale with AI.</p>
+              <div class="plan-price">
+                <span class="price" data-monthly="119" data-annual="99">$99</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="annual-price">Billed annually ($1,188 total)</p>
+            </div>
+            
+            <ul class="plan-features">
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>AI-powered analytics</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Automated reporting</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Custom integrations</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Priority support</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Advanced personalization</span>
+              </li>
+              <li class="feature-item disabled">
+                <svg class="x-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Team collaboration tools</span>
+              </li>
+            </ul>
+            
+            <a href="#" class="btn btn-primary plan-cta">Get started</a>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="plan-card fade-in">
+            <div class="plan-header">
+              <h3 class="plan-name">Enterprise</h3>
+              <p class="plan-desc">Custom solutions for large organizations with advanced needs.</p>
+              <div class="plan-price">
+                <span class="price" data-monthly="349" data-annual="299">$299</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="annual-price">Billed annually ($3,588 total)</p>
+            </div>
+            
+            <ul class="plan-features">
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>AI-powered analytics</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Automated reporting</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Custom integrations</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Priority support</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Advanced personalization</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Team collaboration tools</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Custom AI model training</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Dedicated account manager</span>
+              </li>
+            </ul>
+            
+            <a href="#" class="btn btn-outline plan-cta">Contact sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-faq fade-in">
+      <div class="container">
+        <h2 class="section-title text-center">Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I switch plans later?</h3>
+              <button class="faq-toggle">
+                <svg class="plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <svg class="minus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be prorated for the remainder of your billing cycle. When downgrading, the changes will take effect at the start of your next billing cycle.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What payment methods do you accept?</h3>
+              <button class="faq-toggle">
+                <svg class="plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <svg class="minus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>We accept all major credit cards including Visa, Mastercard, American Express, and Discover. For Enterprise plans, we also accept wire transfers and ACH payments.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is there a free trial available?</h3>
+              <button class="faq-toggle">
+                <svg class="plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <svg class="minus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we offer a 14-day free trial on all plans. No credit card is required to start your trial. You can explore all the features of your chosen plan before making a commitment.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What kind of support is included?</h3>
+              <button class="faq-toggle">
+                <svg class="plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <svg class="minus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>The Starter plan includes standard email support with a 48-hour response time. Professional plans include priority email support with a 24-hour response time. Enterprise plans include dedicated phone and email support with a guaranteed 4-hour response time during business hours, plus a dedicated account manager.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I cancel my subscription anytime?</h3>
+              <button class="faq-toggle">
+                <svg class="plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <svg class="minus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, you can cancel your subscription at any time. When you cancel, you'll retain access to the service until the end of your current billing period. We don't offer refunds for partial subscription periods.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-cta">
+      <div class="container">
+        <div class="cta-card fade-in">
+          <h2 class="cta-title">Still have questions?</h2>
+          <p class="cta-desc">
+            Our team is happy to help you find the perfect plan for your business needs.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Contact Sales</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Scale with AI</a>
+          <p class="footer-desc">
+            Empowering businesses to achieve extraordinary growth through intelligent automation and data-driven insights.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3 class="footer-heading">Product</h3>
+            <ul class="footer-list">
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Enterprise</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3 class="footer-heading">Resources</h3>
+            <ul class="footer-list">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Status</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year"></span> Scale with AI. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Pricing toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('billingToggle');
+      const monthlyOption = document.getElementById('monthlyBilling');
+      const annualOption = document.getElementById('annualBilling');
+      const prices = document.querySelectorAll('.price');
+      const annualPrices = document.querySelectorAll('.annual-price');
+      
+      // Initialize with annual pricing (toggle checked)
+      updatePricing(true);
+      
+      toggle.addEventListener('change', function() {
+        updatePricing(this.checked);
+        
+        if (this.checked) {
+          monthlyOption.classList.remove('active');
+          annualOption.classList.add('active');
+        } else {
+          monthlyOption.classList.add('active');
+          annualOption.classList.remove('active');
+        }
+      });
+      
+      function updatePricing(isAnnual) {
+        prices.forEach(price => {
+          if (isAnnual) {
+            price.textContent = '$' + price.getAttribute('data-annual');
+          } else {
+            price.textContent = '$' + price.getAttribute('data-monthly');
+          }
+        });
+        
+        annualPrices.forEach(price => {
+          price.style.display = isAnnual ? 'block' : 'none';
+        });
+      }
+      
+      // FAQ functionality
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+          
+          // Close all FAQs
+          faqItems.forEach(faq => {
+            faq.classList.remove('open');
+          });
+          
+          // If the clicked FAQ wasn't open, open it
+          if (!isOpen) {
+            item.classList.add('open');
+          }
+        });
+      });
+    });
+  </script>
+  <style>
+    /* Pricing Page Specific Styles */
+    .pricing-hero {
+      padding: 10rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-subtitle {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      font-size: 1.25rem;
+      text-align: center;
+      color: var(--text-secondary);
+    }
+
+    .billing-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+
+    .billing-option {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .billing-option.active {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .save-badge {
+      display: inline-block;
+      margin-left: 0.5rem;
+      padding: 0.25rem 0.5rem;
+      background-color: #dcfce7;
+      color: #166534;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .toggle {
+      position: relative;
+      display: inline-block;
+      width: 3.5rem;
+      height: 1.75rem;
+    }
+
+    .toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .toggle-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #e2e8f0;
+      transition: 0.4s;
+      border-radius: 34px;
+    }
+
+    .toggle-slider:before {
+      position: absolute;
+      content: "";
+      height: 1.25rem;
+      width: 1.25rem;
+      left: 0.25rem;
+      bottom: 0.25rem;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .toggle-slider {
+      background-color: var(--primary-purple);
+    }
+
+    input:checked + .toggle-slider:before {
+      transform: translateX(1.75rem);
+    }
+
+    .pricing-plans {
+      padding: 4rem 0 5rem;
+    }
+
+    .plans-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .plan-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-gray-100);
+      border-radius: var(--radius-2xl);
+      padding: 2rem;
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .plan-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-5px);
+    }
+
+    .popular {
+      border: 2px solid var(--primary-blue);
+      box-shadow: var(--shadow-md);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: 0;
+      right: 2rem;
+      transform: translateY(-50%);
+      background-color: var(--primary-blue);
+      color: white;
+      padding: 0.25rem 1rem;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .plan-header {
+      margin-bottom: 2rem;
+    }
+
+    .plan-name {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .plan-desc {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .plan-price {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+
+    .price {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .period {
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      margin-left: 0.5rem;
+    }
+
+    .annual-price {
+      font-size: 0.875rem;
+      color: var(--primary-purple);
+      margin-bottom: 1rem;
+    }
+
+    .plan-features {
+      list-style: none;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .feature-item .check-icon {
+      color: var(--primary-purple);
+      margin-right: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .feature-item .x-icon {
+      color: var(--text-secondary);
+      margin-right: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .feature-item.disabled {
+      color: var(--text-secondary);
+    }
+
+    .plan-cta {
+      width: 100%;
+      text-align: center;
+    }
+
+    .pricing-faq {
+      padding: 5rem 0;
+      background-color: var(--bg-gray-50);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 3rem auto 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-gray-100);
+    }
+
+    .faq-question {
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .faq-question h3 {
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+
+    .faq-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .faq-toggle .minus-icon {
+      display: none;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease;
+    }
+
+    .faq-answer p {
+      color: var(--text-secondary);
+      padding-bottom: 1.5rem;
+    }
+
+    .faq-item.open .faq-toggle .plus-icon {
+      display: none;
+    }
+
+    .faq-item.open .faq-toggle .minus-icon {
+      display: block;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+
+    .pricing-cta {
+      padding: 5rem 0;
+    }
+
+    .pricing-cta .cta-card {
+      background-color: var(--bg-white);
+      border-radius: var(--radius-2xl);
+      padding: 3rem 2rem;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--border-gray-100);
+      text-align: center;
+    }
+
+    .cta-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-desc {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 768px) {
+      .plans-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .pricing-cta .cta-card {
+        padding: 4rem;
+      }
+    }
+  </style>
+</body>
+</html>

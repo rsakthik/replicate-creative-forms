@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scale with AI</title>
+  <title>Features - Scale with AI</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -12,12 +12,12 @@
   <header class="header">
     <div class="container">
       <div class="header-content">
-        <a href="#" class="logo">Scale with AI</a>
+        <a href="index.html" class="logo">Scale with AI</a>
         
         <nav class="desktop-nav">
-          <a href="#" class="nav-link active">Home</a>
+          <a href="index.html" class="nav-link">Home</a>
           <a href="about.html" class="nav-link">About</a>
-          <a href="features.html" class="nav-link">Features</a>
+          <a href="features.html" class="nav-link active">Features</a>
           <a href="pricing.html" class="nav-link">Pricing</a>
           <a href="contact.html" class="nav-link">Contact</a>
         </nav>
@@ -37,9 +37,9 @@
     
     <div class="mobile-menu">
       <nav class="mobile-nav">
-        <a href="#" class="nav-link active">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
-        <a href="features.html" class="nav-link">Features</a>
+        <a href="features.html" class="nav-link active">Features</a>
         <a href="pricing.html" class="nav-link">Pricing</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
@@ -51,89 +51,58 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
+    <section class="features-hero">
       <div class="bg-gradient"></div>
-      <div class="bg-blob-1"></div>
-      <div class="bg-blob-2"></div>
       
       <div class="container">
-        <div class="hero-content">
-          <span class="tag fade-in">Scale your business with AI</span>
-          
+        <div class="features-content">
           <h1 class="headline fade-in">
-            Revolutionize Your Growth <br class="desktop-only">
-            <span class="gradient-text">With AI Technology</span>
-          </h1>
-          
-          <p class="subheadline fade-in">
-            Harness the power of artificial intelligence to transform your business operations, 
-            enhance customer experiences, and drive sustainable growth at unprecedented speed.
-          </p>
-          
-          <div class="button-group fade-in">
-            <a href="#" class="btn btn-primary">Get started for free</a>
-            <a href="#" class="btn btn-outline">Book a demo</a>
-          </div>
-          
-          <div class="dashboard-image fade-in">
-            <img 
-              src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&q=80" 
-              alt="AI Dashboard" 
-              loading="lazy"
-            />
-          </div>
-          
-          <div class="trusted-section fade-in">
-            <div class="trusted-text">TRUSTED BY INNOVATIVE COMPANIES</div>
-            <div class="logo-container">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2880px-Google_2015_logo.svg.png" alt="Google" class="company-logo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft" class="company-logo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png" alt="Apple" class="company-logo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon" class="company-logo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png" alt="Salesforce" class="company-logo">
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="scroll-indicator">
-        <span>Scroll to explore</span>
-        <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L10 9L19 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="bg-shape-1"></div>
-      <div class="bg-shape-2"></div>
-      
-      <div class="container">
-        <div class="section-header">
-          <span class="tag fade-in">Powerful Features</span>
-          <h2 class="section-title fade-in">
             Transform Your Business With <span class="gradient-text">Intelligent Tools</span>
-          </h2>
-          <p class="section-subtitle fade-in">
+          </h1>
+          <p class="features-subtitle fade-in">
             Our comprehensive suite of AI-powered features helps you automate processes, 
             gain valuable insights, and deliver exceptional experiences.
           </p>
         </div>
-        
-        <div class="features-grid">
-          <div class="feature-card fade-in">
+      </div>
+    </section>
+
+    <section class="feature-spotlight">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-card big-feature fade-in">
             <div class="feature-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 21H4.6C4.03995 21 3.75992 21 3.54601 20.891C3.35785 20.7951 3.20487 20.6422 3.10899 20.454C3 20.2401 3 19.9601 3 19.4V3M7 15L11 10L15 13L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
             <h3 class="feature-title">Data-Driven Insights</h3>
-            <p class="feature-desc">Leverage advanced analytics to extract actionable insights from your data, enabling informed decision-making and strategic planning.</p>
+            <p class="feature-desc">
+              Leverage advanced analytics to extract actionable insights from your data, enabling informed decision-making and strategic planning. Our AI algorithms identify patterns and trends that humans might miss, providing you with a competitive edge in your market.
+            </p>
+            <div class="feature-benefits">
+              <div class="benefit">
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Real-time analytics dashboard</span>
+              </div>
+              <div class="benefit">
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Custom report generation</span>
+              </div>
+              <div class="benefit">
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Trend identification</span>
+              </div>
+            </div>
           </div>
           
-          <div class="feature-card fade-in">
+          <div class="feature-card big-feature fade-in">
             <div class="feature-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -141,7 +110,29 @@
               </svg>
             </div>
             <h3 class="feature-title">Automated Workflows</h3>
-            <p class="feature-desc">Streamline operations with intelligent automation that handles routine tasks, reduces errors, and frees your team to focus on high-value activities.</p>
+            <p class="feature-desc">
+              Streamline operations with intelligent automation that handles routine tasks, reduces errors, and frees your team to focus on high-value activities. Create custom workflows that adapt to your business processes and scale with your needs.
+            </p>
+            <div class="feature-benefits">
+              <div class="benefit">
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Drag-and-drop workflow builder</span>
+              </div>
+              <div class="benefit">
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Conditional logic processing</span>
+              </div>
+              <div class="benefit">
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Error-handling mechanisms</span>
+              </div>
+            </div>
           </div>
           
           <div class="feature-card fade-in">
@@ -193,150 +184,91 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-      <div class="bg-gradient-top"></div>
-      <div class="bg-gradient-bottom"></div>
-      
+    <section class="feature-comparison fade-in">
       <div class="container">
-        <div class="section-header">
-          <span class="tag fade-in">Customer Stories</span>
-          <h2 class="section-title fade-in">
-            What Our <span class="gradient-text">Clients Say</span>
-          </h2>
-          <p class="section-subtitle fade-in">
-            Discover how businesses like yours have achieved remarkable growth 
-            and transformation with our AI-powered platform.
-          </p>
+        <h2 class="section-title text-center">Compare Plans</h2>
+        <p class="comparison-subtitle">See which features are available on each plan</p>
+        
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Starter</th>
+                <th>Professional</th>
+                <th>Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data-Driven Insights</td>
+                <td class="check-cell">Basic</td>
+                <td class="check-cell">Advanced</td>
+                <td class="check-cell">Custom</td>
+              </tr>
+              <tr>
+                <td>Automated Workflows</td>
+                <td class="check-cell">3 workflows</td>
+                <td class="check-cell">10 workflows</td>
+                <td class="check-cell">Unlimited</td>
+              </tr>
+              <tr>
+                <td>Predictive Analytics</td>
+                <td class="x-cell">—</td>
+                <td class="check-cell">Standard</td>
+                <td class="check-cell">Advanced</td>
+              </tr>
+              <tr>
+                <td>Personalized Recommendations</td>
+                <td class="x-cell">—</td>
+                <td class="check-cell">Included</td>
+                <td class="check-cell">Advanced</td>
+              </tr>
+              <tr>
+                <td>Natural Language Processing</td>
+                <td class="x-cell">—</td>
+                <td class="check-cell">Basic</td>
+                <td class="check-cell">Advanced</td>
+              </tr>
+              <tr>
+                <td>Seamless Integration</td>
+                <td class="check-cell">5 integrations</td>
+                <td class="check-cell">20 integrations</td>
+                <td class="check-cell">Unlimited</td>
+              </tr>
+              <tr>
+                <td>Priority Support</td>
+                <td class="x-cell">—</td>
+                <td class="check-cell">Email</td>
+                <td class="check-cell">Phone & Email</td>
+              </tr>
+              <tr>
+                <td>Custom AI Training</td>
+                <td class="x-cell">—</td>
+                <td class="x-cell">—</td>
+                <td class="check-cell">Included</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
-        <div class="testimonial-container fade-in">
-          <div class="testimonial-quote">
-            <div class="quote-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 11L8 17H3L6 11H3V6H10V11ZM21 11L19 17H14L17 11H14V6H21V11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="testimonials-slider">
-              <div class="testimonial-slide active">
-                <p class="testimonial-text">
-                  "Scale with AI has transformed our marketing strategy completely. The predictive analytics helped us identify trends we would have missed, and the automation tools saved our team countless hours of manual work."
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100&h=100" alt="Sarah Thompson" class="author-img">
-                  <div class="author-info">
-                    <h4 class="author-name">Sarah Thompson</h4>
-                    <p class="author-role">Marketing Director, TechVision</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="testimonial-slide">
-                <p class="testimonial-text">
-                  "The ROI we've seen since implementing this platform has been phenomenal. Our customer engagement is up 45% and our team is now able to focus on strategic initiatives rather than repetitive tasks."
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100&h=100" alt="Michael Rodriguez" class="author-img">
-                  <div class="author-info">
-                    <h4 class="author-name">Michael Rodriguez</h4>
-                    <p class="author-role">CEO, GrowthForge</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="testimonial-slide">
-                <p class="testimonial-text">
-                  "What impressed me most was how quickly we were able to integrate the platform with our existing systems. The team provided exceptional support and the results were immediate and measurable."
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=100&h=100" alt="Emily Chen" class="author-img">
-                  <div class="author-info">
-                    <h4 class="author-name">Emily Chen</h4>
-                    <p class="author-role">CTO, InnovateCorp</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="testimonial-slide">
-                <p class="testimonial-text">
-                  "The personalization engine has completely changed how we interact with customers. We're seeing higher conversion rates and improved customer satisfaction scores across all segments."
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100&h=100" alt="David Wilson" class="author-img">
-                  <div class="author-info">
-                    <h4 class="author-name">David Wilson</h4>
-                    <p class="author-role">Customer Success Manager, RetailPlus</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-dots">
-            <button class="dot active" data-index="0"></button>
-            <button class="dot" data-index="1"></button>
-            <button class="dot" data-index="2"></button>
-            <button class="dot" data-index="3"></button>
-          </div>
+        
+        <div class="comparison-cta">
+          <a href="pricing.html" class="btn btn-primary">View Pricing Details</a>
         </div>
       </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="cta">
-      <div class="bg-gradient"></div>
-      <div class="bg-blob-1"></div>
-      <div class="bg-blob-2"></div>
-      
+    <section class="features-cta">
       <div class="container">
         <div class="cta-card fade-in">
           <div class="cta-content">
-            <h2 class="cta-title">Ready to Transform Your Business?</h2>
+            <h2 class="cta-title">Ready to Experience the Power of AI?</h2>
             <p class="cta-desc">
-              Join thousands of companies using our AI platform to accelerate growth, 
-              streamline operations, and deliver exceptional customer experiences.
+              Get started today with our 14-day free trial. No credit card required.
             </p>
             <div class="button-group">
-              <a href="#" class="btn btn-primary">Get started for free</a>
-              <a href="#" class="btn btn-outline">Schedule a demo</a>
-            </div>
-          </div>
-          
-          <div class="cta-benefits">
-            <div class="benefit-item">
-              <div class="benefit-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="benefit-text">
-                <h3>14-day free trial</h3>
-                <p>No credit card required</p>
-              </div>
-            </div>
-            
-            <div class="benefit-item">
-              <div class="benefit-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="benefit-text">
-                <h3>Easy setup</h3>
-                <p>Get started in minutes</p>
-              </div>
-            </div>
-            
-            <div class="benefit-item">
-              <div class="benefit-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="benefit-text">
-                <h3>24/7 support</h3>
-                <p>We're here to help</p>
-              </div>
+              <a href="#" class="btn btn-primary">Start Free Trial</a>
+              <a href="contact.html" class="btn btn-outline">Contact Sales</a>
             </div>
           </div>
         </div>
@@ -348,7 +280,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="#" class="footer-logo">Scale with AI</a>
+          <a href="index.html" class="footer-logo">Scale with AI</a>
           <p class="footer-desc">
             Empowering businesses to achieve extraordinary growth through intelligent automation and data-driven insights.
           </p>
@@ -419,5 +351,168 @@
   </footer>
 
   <script src="script.js"></script>
+  <style>
+    /* Features Page Specific Styles */
+    .features-hero {
+      padding: 10rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .features-subtitle {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      font-size: 1.25rem;
+      text-align: center;
+      color: var(--text-secondary);
+    }
+
+    .feature-spotlight {
+      padding: 5rem 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-gray-100);
+      border-radius: var(--radius-2xl);
+      padding: 2rem;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-gray-200);
+    }
+
+    .big-feature {
+      grid-column: 1 / -1;
+    }
+
+    .feature-benefits {
+      margin-top: 1.5rem;
+    }
+
+    .benefit {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .check-icon {
+      color: var(--primary-purple);
+      margin-right: 0.5rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .feature-comparison {
+      padding: 5rem 0;
+      background-color: var(--bg-gray-50);
+    }
+
+    .comparison-subtitle {
+      text-align: center;
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+      font-size: 1.125rem;
+    }
+
+    .comparison-table-wrapper {
+      overflow-x: auto;
+      margin-bottom: 3rem;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border-gray-100);
+      background-color: var(--bg-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .comparison-table th, .comparison-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-gray-100);
+    }
+
+    .comparison-table th {
+      background-color: var(--bg-gray-50);
+      font-weight: 600;
+    }
+
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .check-cell {
+      color: var(--primary-purple);
+    }
+
+    .x-cell {
+      color: var(--text-secondary);
+    }
+
+    .comparison-cta {
+      text-align: center;
+    }
+
+    .features-cta {
+      padding: 5rem 0;
+    }
+
+    .features-cta .cta-card {
+      background-color: var(--bg-white);
+      border-radius: var(--radius-2xl);
+      padding: 3rem 2rem;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--border-gray-100);
+      text-align: center;
+    }
+
+    .cta-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-desc {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 768px) {
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .features-cta .cta-card {
+        padding: 4rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .big-feature {
+        grid-column: auto;
+        grid-column-end: span 2;
+      }
+    }
+  </style>
 </body>
 </html>
