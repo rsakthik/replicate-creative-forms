@@ -1,12 +1,13 @@
 
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import AnimatedButton from '../ui/AnimatedButton';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,11 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <header 
       className={cn(
@@ -31,26 +37,66 @@ const Header = () => {
       <div className="container max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <span className="font-display text-xl font-semibold tracking-tight">
+            <span className="font-display text-xl font-semibold tracking-tight text-gradient">
               Scale with AI
             </span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="font-medium text-sm text-gray-800 hover:text-black transition-colors">
+            <Link 
+              to="/" 
+              className={cn(
+                "font-medium text-sm transition-colors",
+                location.pathname === "/" 
+                  ? "text-brand-purple" 
+                  : "text-gray-800 hover:text-brand-purple"
+              )}
+            >
               Home
             </Link>
-            <Link to="/about" className="font-medium text-sm text-gray-800 hover:text-black transition-colors">
+            <Link 
+              to="/about" 
+              className={cn(
+                "font-medium text-sm transition-colors",
+                location.pathname === "/about" 
+                  ? "text-brand-purple" 
+                  : "text-gray-800 hover:text-brand-purple"
+              )}
+            >
               About
             </Link>
-            <Link to="/features" className="font-medium text-sm text-gray-800 hover:text-black transition-colors">
+            <Link 
+              to="/features" 
+              className={cn(
+                "font-medium text-sm transition-colors",
+                location.pathname === "/features" 
+                  ? "text-brand-purple" 
+                  : "text-gray-800 hover:text-brand-purple"
+              )}
+            >
               Features
             </Link>
-            <Link to="/pricing" className="font-medium text-sm text-gray-800 hover:text-black transition-colors">
+            <Link 
+              to="/pricing" 
+              className={cn(
+                "font-medium text-sm transition-colors",
+                location.pathname === "/pricing" 
+                  ? "text-brand-purple" 
+                  : "text-gray-800 hover:text-brand-purple"
+              )}
+            >
               Pricing
             </Link>
-            <Link to="/blog" className="font-medium text-sm text-gray-800 hover:text-black transition-colors">
-              Blog
+            <Link 
+              to="/contact" 
+              className={cn(
+                "font-medium text-sm transition-colors",
+                location.pathname === "/contact" 
+                  ? "text-brand-purple" 
+                  : "text-gray-800 hover:text-brand-purple"
+              )}
+            >
+              Contact
             </Link>
           </nav>
 
@@ -65,7 +111,7 @@ const Header = () => {
             <AnimatedButton 
               variant="default" 
               size="sm"
-              className="whitespace-nowrap"
+              className="whitespace-nowrap bg-gradient-to-r from-brand-purple to-brand-blue hover:from-brand-purple/90 hover:to-brand-blue/90"
             >
               Get started
             </AnimatedButton>
@@ -98,38 +144,48 @@ const Header = () => {
         <nav className="flex flex-col space-y-6 py-8">
           <Link 
             to="/" 
-            className="font-medium text-lg"
-            onClick={() => setMobileMenuOpen(false)}
+            className={cn(
+              "font-medium text-lg",
+              location.pathname === "/" ? "text-brand-purple" : ""
+            )}
           >
             Home
           </Link>
           <Link 
             to="/about" 
-            className="font-medium text-lg"
-            onClick={() => setMobileMenuOpen(false)}
+            className={cn(
+              "font-medium text-lg",
+              location.pathname === "/about" ? "text-brand-purple" : ""
+            )}
           >
             About
           </Link>
           <Link 
             to="/features" 
-            className="font-medium text-lg"
-            onClick={() => setMobileMenuOpen(false)}
+            className={cn(
+              "font-medium text-lg",
+              location.pathname === "/features" ? "text-brand-purple" : ""
+            )}
           >
             Features
           </Link>
           <Link 
             to="/pricing" 
-            className="font-medium text-lg"
-            onClick={() => setMobileMenuOpen(false)}
+            className={cn(
+              "font-medium text-lg",
+              location.pathname === "/pricing" ? "text-brand-purple" : ""
+            )}
           >
             Pricing
           </Link>
           <Link 
-            to="/blog" 
-            className="font-medium text-lg"
-            onClick={() => setMobileMenuOpen(false)}
+            to="/contact" 
+            className={cn(
+              "font-medium text-lg",
+              location.pathname === "/contact" ? "text-brand-purple" : ""
+            )}
           >
-            Blog
+            Contact
           </Link>
         </nav>
         <div className="fixed bottom-0 left-0 w-full p-6 bg-white border-t">
@@ -137,14 +193,12 @@ const Header = () => {
             <AnimatedButton 
               variant="outline" 
               className="w-full"
-              onClick={() => setMobileMenuOpen(false)}
             >
               Sign in
             </AnimatedButton>
             <AnimatedButton 
               variant="default" 
-              className="w-full"
-              onClick={() => setMobileMenuOpen(false)}
+              className="w-full bg-gradient-to-r from-brand-purple to-brand-blue"
             >
               Get started
             </AnimatedButton>

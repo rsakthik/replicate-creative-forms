@@ -57,10 +57,20 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom theme colors
+				brand: {
+					purple: '#8B5CF6',
+					blue: '#0EA5E9',
+					teal: '#06B6D4',
+					pink: '#EC4899',
+					orange: '#F97316',
+					yellow: '#FBBF24',
+				},
 			},
 			fontFamily: {
-				sans: ['Inter var', 'sans-serif'],
-				display: ['SF Pro Display', 'Inter var', 'sans-serif'],
+				sans: ['Poppins', 'Inter var', 'sans-serif'],
+				display: ['Montserrat', 'SF Pro Display', 'Inter var', 'sans-serif'],
+				mono: ['JetBrains Mono', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

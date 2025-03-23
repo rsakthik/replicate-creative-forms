@@ -14,9 +14,9 @@ const Hero = () => {
   return (
     <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
       {/* Background gradient elements */}
-      <div className="absolute top-0 left-0 right-0 h-[500px] bg-gradient-to-b from-blue-50 to-transparent opacity-60 -z-10"></div>
-      <div className="absolute top-24 right-1/4 w-72 h-72 bg-pink-200 rounded-full blur-3xl opacity-20 animate-float -z-10"></div>
-      <div className="absolute top-32 left-1/4 w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-20 animate-float animation-delay-1000 -z-10"></div>
+      <div className="absolute top-0 left-0 right-0 h-[500px] bg-gradient-to-b from-brand-purple/10 to-transparent opacity-80 -z-10"></div>
+      <div className="absolute top-24 right-1/4 w-72 h-72 bg-brand-pink/20 rounded-full blur-3xl opacity-40 animate-float -z-10"></div>
+      <div className="absolute top-32 left-1/4 w-64 h-64 bg-brand-blue/20 rounded-full blur-3xl opacity-40 animate-float animation-delay-1000 -z-10"></div>
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 relative">
         <div className="text-center max-w-4xl mx-auto">
@@ -25,7 +25,7 @@ const Hero = () => {
             className="opacity-0"
             duration={800}
           >
-            <span className="inline-block px-3 py-1 rounded-full bg-black/5 text-sm font-medium mb-6">
+            <span className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-brand-purple/20 to-brand-blue/20 text-sm font-medium mb-6">
               Scale your business with AI
             </span>
           </ScrollReveal>
@@ -36,9 +36,9 @@ const Hero = () => {
             duration={800}
             delay={100}
           >
-            <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6">
               Revolutionize Your Growth <br className="hidden md:block" />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">With AI Technology</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-purple to-brand-blue">With AI Technology</span>
             </h1>
           </ScrollReveal>
 
@@ -50,7 +50,7 @@ const Hero = () => {
           >
             <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
               Harness the power of artificial intelligence to transform your business operations, 
-              enhance customer experiences, and drive sustainable growth.
+              enhance customer experiences, and drive sustainable growth at unprecedented speed.
             </p>
           </ScrollReveal>
 
@@ -90,12 +90,30 @@ const Hero = () => {
                 mounted ? "opacity-100 scale-100" : "opacity-0 scale-95"
               )}>
                 <img 
-                  src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80" 
+                  src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&q=80" 
                   alt="AI Dashboard" 
                   className="w-full h-auto object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal
+            animation="fade-in-up"
+            className="opacity-0 mt-12"
+            duration={800}
+            delay={500}
+          >
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <div className="text-gray-400 text-sm font-medium">TRUSTED BY INNOVATIVE COMPANIES</div>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2880px-Google_2015_logo.svg.png" alt="Google" className="h-6 opacity-70" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft" className="h-6 opacity-70" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png" alt="Apple" className="h-6 opacity-70" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon" className="h-6 opacity-70" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png" alt="Salesforce" className="h-6 opacity-70" />
               </div>
             </div>
           </ScrollReveal>
