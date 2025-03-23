@@ -1,13 +1,13 @@
-
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import AnimatedButton from '../ui/AnimatedButton';
 import ScrollReveal from '../ui/ScrollReveal';
+import { Switch } from "@/components/ui/switch";
 
 const features = [
   "AI-powered analytics",
   "Automated reporting",
-  "Custom integrations",
+  "Custom integrations", 
   "Priority support",
   "Advanced personalization",
   "Team collaboration tools"
@@ -45,16 +45,12 @@ const Pricing = () => {
           
           <ScrollReveal animation="fade-in-up" delay={300}>
             <div className="flex items-center justify-center mb-12">
-              <span className={cn("mr-3", isAnnual ? "text-gray-900" : "text-gray-500")}>Monthly</span>
-              <button 
-                className="relative w-14 h-8 bg-gray-200 rounded-full p-1 transition duration-300 focus:outline-none"
-                onClick={() => setIsAnnual(!isAnnual)}
-              >
-                <div className={cn(
-                  "absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300",
-                  isAnnual ? "translate-x-6" : "translate-x-0"
-                )} />
-              </button>
+              <span className={cn("mr-3", !isAnnual ? "text-gray-900" : "text-gray-500")}>Monthly</span>
+              <Switch
+                checked={isAnnual}
+                onCheckedChange={setIsAnnual}
+                className="mx-3"
+              />
               <span className={cn("ml-3 flex items-center", isAnnual ? "text-gray-900" : "text-gray-500")}>
                 Annually
                 <span className="ml-2 bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded-full">Save 20%</span>
