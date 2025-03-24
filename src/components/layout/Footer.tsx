@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,7 @@ const Footer = () => {
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-6">
               <img 
-                src="/lovable-uploads/9274d836-c2b5-4fb7-82ef-298f26408862.png" 
+                src="/lovable-uploads/a8bd15b9-3371-4a7b-984d-63d04e2aaa01.png" 
                 alt="Scale with AI" 
                 className="h-10 md:h-12" 
               />
