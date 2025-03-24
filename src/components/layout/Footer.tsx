@@ -11,9 +11,11 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-6">
-              <span className="font-display text-xl font-semibold tracking-tight">
-                Scale with AI
-              </span>
+              <img 
+                src="/lovable-uploads/9274d836-c2b5-4fb7-82ef-298f26408862.png" 
+                alt="Scale with AI" 
+                className="h-10 md:h-12" 
+              />
             </Link>
             <p className="text-gray-600 mb-6 max-w-xs">
               Empowering businesses to achieve extraordinary growth through intelligent automation and data-driven insights.

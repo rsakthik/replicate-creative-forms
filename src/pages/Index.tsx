@@ -29,7 +29,7 @@ const Index = () => {
         <Hero />
         <Features />
         <Testimonials />
-        {/* <Pricing /> */}
+        <Pricing />
         <CallToAction />
       </main>
       <Footer />

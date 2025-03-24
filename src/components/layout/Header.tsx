@@ -37,9 +37,11 @@ const Header = () => {
       <div className="container max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <span className="font-display text-xl font-semibold tracking-tight text-gradient">
-              Scale with AI
-            </span>
+            <img 
+              src="/lovable-uploads/9274d836-c2b5-4fb7-82ef-298f26408862.png" 
+              alt="Scale with AI" 
+              className="h-10 md:h-12" 
+            />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
